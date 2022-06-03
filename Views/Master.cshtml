@@ -1,0 +1,23 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+    Layout = null;
+    
+    SmidgeHelper.RequiresCss("styles.css").RequiresCss("tailwindcss.css");
+    SmidgeHelper.RequiresJs("scripts/scripts.13519463c45c16fd5773.js");
+}
+<html lang="">
+<head>
+    <title>
+        Title
+    </title>
+    @(await SmidgeHelper.JsHereAsync())
+    @(await SmidgeHelper.CssHereAsync())
+</head>
+<body>
+
+@RenderBody()
+
+
+</body>
+</html>

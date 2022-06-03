@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)yuzudelivery.umbraco.core\2.0.22\build\YuzuDelivery.Umbraco.Core.targets" Condition="Exists('$(NuGetPackageRoot)yuzudelivery.umbraco.core\2.0.22\build\YuzuDelivery.Umbraco.Core.targets')" />
+    <Import Project="$(NuGetPackageRoot)yuzudelivery.umbraco.import\2.0.7\build\YuzuDelivery.Umbraco.Import.targets" Condition="Exists('$(NuGetPackageRoot)yuzudelivery.umbraco.import\2.0.7\build\YuzuDelivery.Umbraco.Import.targets')" />
+    <Import Project="$(NuGetPackageRoot)cryptlex.lexactivator\3.6.5\build\Cryptlex.LexActivator.targets" Condition="Exists('$(NuGetPackageRoot)cryptlex.lexactivator\3.6.5\build\Cryptlex.LexActivator.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.mvc.razor.runtimecompilation\5.0.11\buildTransitive\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.mvc.razor.runtimecompilation\5.0.11\buildTransitive\net5.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets')" />
+    <Import Project="$(NuGetPackageRoot)our.umbraco.doctypegrideditor\9.0.0-rc001\build\Our.Umbraco.DocTypeGridEditor.targets" Condition="Exists('$(NuGetPackageRoot)our.umbraco.doctypegrideditor\9.0.0-rc001\build\Our.Umbraco.DocTypeGridEditor.targets')" />
+    <Import Project="$(NuGetPackageRoot)yuzudelivery.umbraco.blocklist\2.0.22\build\YuzuDelivery.Umbraco.BlockList.targets" Condition="Exists('$(NuGetPackageRoot)yuzudelivery.umbraco.blocklist\2.0.22\build\YuzuDelivery.Umbraco.BlockList.targets')" />
+    <Import Project="$(NuGetPackageRoot)umbraco.forms\9.4.1\buildTransitive\Umbraco.Forms.targets" Condition="Exists('$(NuGetPackageRoot)umbraco.forms\9.4.1\buildTransitive\Umbraco.Forms.targets')" />
+    <Import Project="$(NuGetPackageRoot)umbraco.cms.staticassets\9.5.0\buildTransitive\Umbraco.Cms.StaticAssets.targets" Condition="Exists('$(NuGetPackageRoot)umbraco.cms.staticassets\9.5.0\buildTransitive\Umbraco.Cms.StaticAssets.targets')" />
+  </ImportGroup>
+</Project>

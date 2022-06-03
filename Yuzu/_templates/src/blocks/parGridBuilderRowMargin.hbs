@@ -1,0 +1,24 @@
+{{!-- if the row only has one column --}}
+{{~#unless this.[1]~}}
+    {{!-- if there is atleast 1 item in the column--}}
+    {{~#with this.[0]~}}
+        {{~#each items~}}
+            {{~#if @last~}}
+                {{!-- some column items is places inside 'content' so check both--}}
+                {{~#ifCond spaceDesktop '||' content.spaceDesktop~}}
+                    {{~#unless @first~}}
+                        {{~#ifCond ../this.items.[0].content.spaceDesktop '||' ../this.items.[0].content.spaceMobile~}}
+                            remove-whitespace
+                        {{~else~}}
+                            {{~#ifCond ../this.items.[0].spaceDesktop '||' ../this.items.[0].spaceMobile~}}
+                                remove-whitespace
+                            {{~/ifCond~}}
+                        {{~/ifCond~}}
+                    {{~else~}}
+                        remove-whitespace
+                    {{~/unless~}}
+                {{~/ifCond~}}
+            {{~/if~}}
+        {{~/each~}}
+    {{~/with~}}
+{{~/unless~}}

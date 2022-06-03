@@ -1,0 +1,11 @@
+{
+  "models": {},
+  "ignoreViewmodels": [],
+  "ignoreViewmodelProperties": [
+    {
+      "Key": "vmBlock_GoogleMap",
+      "Value": "ApiKey"
+    }
+  ],
+  "manualMappers": []
+}

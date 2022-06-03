@@ -1,0 +1,18 @@
+{
+    "enums": {
+        "/width": [
+            "container",
+            "full-width"
+        ],
+        "/colorScheme": [
+            "light",
+            "dark"
+        ],
+        "/hide": [
+            "",
+            "hidden lg:grid",
+            "grid lg:hidden"
+        ]
+    },
+    "refs": {}
+}

@@ -1,0 +1,13 @@
+{
+    "parRowBuilder": {
+        "refs": {
+            "/rows/config": [
+                "/parRowBuilderConfig"
+            ],
+            "/rows/items": []
+        }
+    },
+    "anyOfTypes": [
+        "parRowBuilder"
+    ]
+}

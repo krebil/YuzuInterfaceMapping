@@ -1,0 +1,50 @@
+{
+    "parFormBuilder": {
+        "refs": {
+            "/fieldsets/fields": [
+                "/parFormButton",
+                "/parFormCheckboxRadio",
+                "/parFormCheckboxRadioList",
+                "/parFormTextArea",
+                "/parFormTextInput",
+                "/parFormSelect",
+                "/parFormHidden",
+                "/parRecaptcha",
+                "/parTitleAndDescription",
+                "/parFormUpload"
+            ],
+            "/fieldsets/rows/columns": [
+                "/parFormButton",
+                "/parFormCheckboxRadio",
+                "/parFormCheckboxRadioList",
+                "/parFormTextArea",
+                "/parFormTextInput",
+                "/parFormSelect",
+                "/parFormHidden",
+                "/parRecaptcha",
+                "/parTitleAndDescription",
+                "/parFormUpload"
+            ],
+            "/actionLinks": [
+                "/dataLink"
+            ]
+        }
+    },
+    "anyOfTypes": [
+        "parFormBuilder",
+        "parFormBuilderHorizontal"
+    ],
+    "parFormBuilderHorizontal": {
+        "refs": {
+            "/fieldsets/fields": [
+                "/parFormBuilderFields"
+            ],
+            "/fieldsets/rows/columns": [
+                "/parFormBuilderFields"
+            ],
+            "/actionLinks": [
+                "/dataLink"
+            ]
+        }
+    }
+}

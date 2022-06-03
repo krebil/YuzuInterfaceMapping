@@ -1,0 +1,24 @@
+{
+    "enums": {
+        "/hide": [
+            "",
+            "hidden lg:grid",
+            "grid lg:hidden"
+        ],
+        "/ColumnItemsVerticalPlacement": [
+            "content-start",
+            "content-center",
+            "content-end",
+            "content-between",
+            "content-around",
+            "content-evenly",
+            "content-stretch"
+        ],
+        "/ColumnItemsHorizontalPlacement": [
+            "place-items-start",
+            "place-items-center",
+            "place-items-end"
+        ]
+    },
+    "refs": {}
+}

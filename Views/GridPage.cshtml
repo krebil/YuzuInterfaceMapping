@@ -1,0 +1,8 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.GridPage>
+@using ContentModels = YuzuDelivery.UmbracoModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+@(Html.RenderYuzu<vmPage_GridPage>(Model))

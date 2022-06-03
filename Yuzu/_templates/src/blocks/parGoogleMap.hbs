@@ -1,0 +1,37 @@
+<div data-controller="google-map" {{~#if markers.[0]~}}data-google-map-markers-value='[
+    {{~#each markers~}}
+    {
+    {{~#if latitude~}}
+    "lat": {{~latitude~}},
+    {{~/if~}}
+    {{~#if longitude~}}
+    "lng": {{~longitude~}}
+    {{~/if~}}
+    {{~#if icon.src~}}
+    ,"icon":"{{~icon.src~}}"
+    {{~/if~}}
+    }
+    {{~#unless @last~}},{{~/unless~}}
+{{~/each~}}]'
+{{~/if~}}
+    {{~#if zoom~}}data-google-map-zoom-value="{{zoom}}"{{~/if~}} {{~#if latitude~}}
+     data-google-map-lat-value="{{latitude}}" {{~/if~}}  {{~#if longitude~}}
+     data-google-map-lng-value="{{longitude}}" {{~/if~}} data-google-map-api-key-value="{{apiKey}}" {{~#if mapId~}}data-google-map-map-id-value="{{mapId}}"{{~/if~}}
+     class="google-map{{#each _modifiers}} google-map--{{this}}{{/each}}" data-action="markerClicked@window->google-map#test">
+
+    <div class="h-[40rem] min-h-screen lg:min-h-0" data-google-map-target="map">
+        
+    </div>
+    
+    {{#each markers}}
+        <template data-google-map-target="markerInfo">
+            {{#if text}}
+                <div class="prose">
+                    {{{text}}}
+                </div>
+            {{/if}}
+        </template>
+    {{/each}}
+
+    
+</div>

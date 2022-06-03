@@ -1,0 +1,53 @@
+{
+    "id": "/parGoogleMap",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "apiKey": {
+            "type": "string"
+        },
+        "latitude": {
+            "type": "string"
+        },
+        "longitude": {
+            "type": "string"
+        },
+        "zoom": {
+            "type": "string"
+        },
+        "mapId": {
+            "type": "string"
+        },
+        "markers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "latitude": {
+                        "type": "string"
+                    },
+                    "longitude": {
+                        "type": "string"
+                    },
+                    "icon": {
+                        "$ref": "./dataImage.schema"
+                    },
+                    "text": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "_ref": {
+            "type": "string"
+        },
+        "_modifiers": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": false
+}

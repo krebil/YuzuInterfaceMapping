@@ -1,0 +1,48 @@
+{
+    "id": "/parGridBuilderColumnConfig",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "hide": {
+            "type": "string",
+            "enum": [
+                "",
+                "hidden lg:grid",
+                "grid lg:hidden"
+            ]
+        },
+        "ColumnItemsVerticalPlacement": {
+            "type": "string",
+            "default": "content-center",
+            "enum": [
+                "content-start",
+                "content-center",
+                "content-end",
+                "content-between",
+                "content-around",
+                "content-evenly",
+                "content-stretch"
+            ]
+        },
+        "ColumnItemsHorizontalPlacement": {
+            "type": "string",
+            "default": "place-items-center",
+            "enum": [
+                "place-items-start",
+                "place-items-center",
+                "place-items-end"
+            ]
+        },
+        "_ref": {
+            "type": "string"
+        },
+        "_modifiers": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

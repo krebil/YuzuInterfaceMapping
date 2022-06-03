@@ -1,0 +1,23 @@
+<div class="gridBuilder grid grid-cols-[100%] space-y-12  {{#unless rows.[0].columns.[0].items.[0].content.heroMain}}mt-20{{/unless}}">
+    {{#each rows}}
+        {{#if columns.[0]}}
+            <div class="{{> parGridBuilderRowMargin columns}} w-full {{#if config.hide}}{{enum config.hide}} {{/if}} {{#if config.removeTopWhiteSpace}}remove-whitespace {{/if}}{{#if config.colorScheme}}{{enum config.colorScheme}}{{/if}}{{#if config.backgroundColor}} py-12 {{/if}}" {{#if config.backgroundColor}}style="background-color:#{{config.backgroundColor}}"{{/if}}>
+                <div class="row {{#if this.config.width}}{{enum this.config.width}}{{else}}container{{/if}} {{#unless this.config.keepColumns}}lg:grid gap-4 lg:gap-12 {{#if this.config.stackFromRight}} flex flex-col-reverse {{else}} grid {{/if}} lg:grid-cols-12 {{else}} grid grid-cols-12 lg:gap-12 gap-2{{/unless}} ">
+                    {{#each columns}}
+                        {{#if items.[0]}}
+                            <div class="col relative grid gap-12 {{#if config.hide}}{{enum config.hide}} {{/if}} {{#if gridSize}}col-{{enum gridSize}} {{#unless ../config.keepColumns}}col-span-full lg:{{/unless}}col-span-{{enum gridSize}}{{else}}col-full lg:col-span-full{{/if}} {{enum config.ColumnItemsVerticalPlacement}} lg:{{enum config.ColumnItemsHorizontalPlacement}}">
+                                {{#each items}}
+                                    {{#if this.content}}
+                                        {{{ dynPartial _ref this.content }}}
+                                    {{else}}
+                                        {{{ dynPartial _ref this }}}
+                                    {{/if}}
+                                {{/each}}
+                            </div>
+                        {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        {{/if}}
+    {{/each}}
+</div>

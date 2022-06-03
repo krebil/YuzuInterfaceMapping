@@ -1,0 +1,8 @@
+{
+    "refs": {
+        "": [
+            "/parGoogleMap",
+            "/parLibraryBlockPicker"
+        ]
+    }
+}
